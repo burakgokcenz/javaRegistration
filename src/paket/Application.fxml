@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="618.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paket.ControllerApplication">
+   <children>
+      <TextField fx:id="txtAd" layoutX="51.0" layoutY="118.0" prefHeight="31.0" prefWidth="180.0" promptText="Adı" />
+      <TextField fx:id="txtSoyad" layoutX="51.0" layoutY="173.0" prefHeight="31.0" prefWidth="180.0" promptText="Soyadı" />
+      <DatePicker fx:id="DateTarih" layoutX="51.0" layoutY="227.0" prefHeight="31.0" prefWidth="180.0" promptText="Doğum Tarihi" />
+      <Spinner fx:id="SpnMaas" layoutX="48.0" layoutY="312.0" prefHeight="31.0" prefWidth="180.0" />
+      <ComboBox fx:id="cmbCinsiyet" layoutX="51.0" layoutY="366.0" prefHeight="31.0" prefWidth="180.0" promptText="Cinsiyet" />
+      <ComboBox fx:id="cmbDepart" layoutX="51.0" layoutY="420.0" prefHeight="31.0" prefWidth="180.0" promptText="Departman" />
+      <Button fx:id="btnPersonel" layoutX="51.0" layoutY="482.0" mnemonicParsing="false" onAction="#KayitEkle" prefHeight="31.0" prefWidth="180.0" text="Personel Ekle" />
+      <Button fx:id="btnGuncel" layoutX="745.0" layoutY="482.0" mnemonicParsing="false" onAction="#btnGuncelle" prefHeight="31.0" prefWidth="180.0" text="Personel Güncelle" />
+      <Button fx:id="btnSil" layoutX="384.0" layoutY="482.0" mnemonicParsing="false" onAction="#KayitSil" prefHeight="31.0" prefWidth="180.0" text="Personel Sil" />
+      <Label layoutX="51.0" layoutY="272.0" text="Maaş" />
+      <TableView fx:id="TableView" layoutX="299.0" layoutY="64.0" prefHeight="356.0" prefWidth="647.0">
+         <columns>
+            <TableColumn fx:id="Colİd" prefWidth="75.0" text="İD" />
+            <TableColumn fx:id="ColAd" prefWidth="75.0" text="Ad" />
+            <TableColumn fx:id="ColSoyad" prefWidth="100.0" text="Soyad" />
+            <TableColumn fx:id="ColTarih" prefWidth="144.0" text="Doğum Tarihi" />
+            <TableColumn fx:id="ColMaas" prefWidth="68.0" text="Maaş" />
+            <TableColumn fx:id="ColCinsiyet" prefWidth="74.0" text="Cinsiyet" />
+            <TableColumn fx:id="ColDepart" prefWidth="95.0" text="Departman" />
+         </columns>
+      </TableView>
+      <Spinner fx:id="Spnİd" layoutX="51.0" layoutY="64.0" prefHeight="31.0" prefWidth="180.0" />
+   </children>
+</AnchorPane>
